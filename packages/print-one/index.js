@@ -1,5 +1,5 @@
 const print = () => {
-    console.log('print 1')
+    console.log('print 12')
 }
 
 export default print
