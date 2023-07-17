@@ -1,6 +1,6 @@
 {
-  "name": "print-one",
-  "version": "1.0.3",
+  "name": "print-three",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "gitHead": "dd3500a752b3024b2907545420ece90e1ceb23ad"
+  "license": "ISC"
 }
