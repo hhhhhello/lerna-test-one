@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/hhhhhello/lerna-test-one/compare/print-two@1.2.1...print-two@1.3.0) (2023-07-19)
+
+
+### Features
+
+* 红红火火 ([18f0475](https://github.com/hhhhhello/lerna-test-one/commit/18f0475292cc03e05235ab27d02a26d0bc6bb986))
+
+
+
+
+
 ## [1.2.1](https://github.com/hhhhhello/lerna-test-one/compare/print-two@1.2.0...print-two@1.2.1) (2023-07-19)
 
 **Note:** Version bump only for package print-two
