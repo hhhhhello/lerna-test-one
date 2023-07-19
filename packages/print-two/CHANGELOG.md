@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/hhhhhello/lerna-test-one/compare/print-two@1.1.0...print-two@1.2.0) (2023-07-19)
+
+
+### Features
+
+* 哈哈哈哈 ([19939f2](https://github.com/hhhhhello/lerna-test-one/commit/19939f2feaf01e2e0f74ab41cb123109e6167340))
+
+
+
+
+
 # [1.1.0](https://github.com/hhhhhello/lerna-test-one/compare/print-two@1.0.7...print-two@1.1.0) (2023-07-19)
 
 
