@@ -1,6 +1,6 @@
 {
-  "name": "print-two",
-  "version": "1.3.2",
+  "name": "print-four",
+  "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -8,6 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "gitHead": "393f97805b8387c5396952bbc9a47e53442825c9"
+  "license": "ISC"
 }
