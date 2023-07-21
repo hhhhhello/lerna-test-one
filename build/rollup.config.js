@@ -13,9 +13,11 @@ import externals from 'rollup-plugin-node-externals'
 import postcss from 'rollup-plugin-postcss'
 import { fileURLToPath } from 'url'
 
-const package_ = JSON.parse(readFileSync('./package.json'))
 const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+const buildDirname = path.dirname(__filename)
+const __dirname = `${buildDirname.split('/').slice(0, -1).join('/')}/packages${process.argv.slice(2)}`
+const package_ = JSON.parse(readFileSync(`${__dirname}/package.json`))
+
 
 const defaultExtensions = [
   '.js',
@@ -28,7 +30,7 @@ const defaultExtensions = [
 ]
 
 export default {
-  input: 'src/index.ts',
+  input: `${__dirname}/src/index.js`,
   output: [
     {
       dir: path.dirname(package_.main),
@@ -50,7 +52,7 @@ export default {
   plugins: [
     nodeResolve({ extensions: defaultExtensions }),
     alias({
-      entries: [{ find: '@', replacement: path.resolve(__dirname, '../src') }],
+      entries: [{ find: '@', replacement: path.resolve(__dirname, '/src') }],
       customResolver: nodeResolve({
         extensions: defaultExtensions,
       }),
@@ -71,12 +73,12 @@ export default {
     copy({
       targets: [
         {
-          src: path.resolve(__dirname, '../src/styles'),
-          dest: path.resolve(__dirname, '../lib'),
+          src: path.resolve(__dirname, '/src/styles'),
+          dest: path.resolve(__dirname, '/lib'),
         },
         {
-          src: path.resolve(__dirname, '../src/styles'),
-          dest: path.resolve(__dirname, '../es'),
+          src: path.resolve(__dirname, '/src/styles'),
+          dest: path.resolve(__dirname, '/es'),
         },
       ],
     }),
